@@ -35,3 +35,5 @@ In this repo, you’ll start by learning
 		</td>
 	</tr>
 </table>
+
+Redux methods/Functions

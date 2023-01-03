@@ -3,16 +3,16 @@ import './App.css';
 import {useSelector} from 'react-redux';
 
 function App() {
-  const birds = useSelector(state => state.birds);
+  const projects = useSelector(state => state.projects);  // get the projects state from the Redux store
   return (
     <div className="wrapper">
-      <h1>Bird List</h1>
+      <h1>Software Engineering Project List</h1>
       <ul>
-        {birds.map(bird => (
-          <li key={bird.name}>
-            <h3>{bird.name}</h3>
+        {projects.map(project => (
+          <li key={project.name}>
+            <h3>{project.name}</h3>
             <div>
-              Views: {bird.views}
+              Description: {project.description}
             </div>
           </li>
         ))}
@@ -22,3 +22,6 @@ function App() {
 }
 
 export default App;
+
+
+
